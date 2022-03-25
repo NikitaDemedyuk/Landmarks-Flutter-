@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:landmarks_flutter/splash.dart';
 
 void main() {
   runApp(const MyApp());
