@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,28 +22,28 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="YRO-k0-Ey4">
                                 <rect key="frame" x="207" y="448" width="0.5" height="0.5"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandmarkLaunchScreenImage" translatesAutoresizingMaskIntoConstraints="NO" id="4vC-mp-m9g">
-                                <rect key="frame" x="52" y="194" width="310" height="329"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandmarkLaunchScreenImage" translatesAutoresizingMaskIntoConstraints="NO" id="jt1-v7-7Ap">
+                                <rect key="frame" x="82" y="348" width="250" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="329" id="8hY-r5-RMW"/>
+                                    <constraint firstAttribute="height" constant="200" id="i0o-y5-0Qc"/>
+                                    <constraint firstAttribute="width" constant="250" id="omT-8u-kxi"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LANDMARKS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLh-yF-jTA">
-                                <rect key="frame" x="70" y="573" width="274" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LANDMARKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjB-WK-Ogn">
+                                <rect key="frame" x="109.5" y="618" width="195" height="30"/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="30"/>
-                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.62507176095824901" green="0.89482733963595407" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.62507176099999995" green="0.89482733960000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="cjB-WK-Ogn" firstAttribute="top" secondItem="jt1-v7-7Ap" secondAttribute="bottom" constant="70" id="0CA-0i-N7d"/>
                             <constraint firstItem="YRO-k0-Ey4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1a2-6s-vTC"/>
-                            <constraint firstItem="MLh-yF-jTA" firstAttribute="top" secondItem="4vC-mp-m9g" secondAttribute="bottom" constant="50" id="2Ij-d8-gXi"/>
                             <constraint firstItem="YRO-k0-Ey4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4X2-HB-R7a"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4vC-mp-m9g" secondAttribute="trailing" constant="32" id="Q0Y-EJ-Wix"/>
-                            <constraint firstItem="4vC-mp-m9g" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="32" id="QsO-RA-Waw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MLh-yF-jTA" secondAttribute="trailing" constant="50" id="ij0-1v-dcl"/>
-                            <constraint firstItem="MLh-yF-jTA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="50" id="m6J-aq-1Gj"/>
-                            <constraint firstItem="4vC-mp-m9g" firstAttribute="top" secondItem="Ydg-fD-yQy" secondAttribute="bottom" constant="150" id="x58-Ur-XTI"/>
+                            <constraint firstItem="jt1-v7-7Ap" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SEx-ZV-vLp"/>
+                            <constraint firstItem="jt1-v7-7Ap" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XsJ-ph-OMS"/>
+                            <constraint firstItem="cjB-WK-Ogn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mbf-Hr-JG2"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -56,8 +55,5 @@
     <resources>
         <image name="LandmarkLaunchScreenImage" width="512" height="512"/>
         <image name="LaunchImage" width="0.5" height="0.5"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
